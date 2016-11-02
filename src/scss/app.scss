@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+@import "~susy/sass/susy";
+@import "~breakpoint-sass";
+
+@include global-box-sizing(border-box);
+
+$bp-large: 1200px;
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  @include layout(100% 12 .1 after fluid isolate);
+  padding-top: 10px;
+  max-width: 85%;
+  margin: auto;
+}
+
+#loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.1);
+  top: 0;
+  left: 0;
+
+  &>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.container {
+  @include container();
+  padding: 10px;
+  margin-bottom: 10px;
+}

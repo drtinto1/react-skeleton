@@ -1,0 +1,2 @@
+
+export const MATCH_LIST_LOAD = 'MATCH_LIST_LOAD';

@@ -1,5 +1,5 @@
 
-exports.loadAsyncJSONData = function(url, successCallback, errorCallback) {
+export function loadAsyncJSONData(url, successCallback, errorCallback) {
     "use strict";
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -18,5 +18,5 @@ exports.loadAsyncJSONData = function(url, successCallback, errorCallback) {
         }
     };
     xhr.send();
-};
+}
 
